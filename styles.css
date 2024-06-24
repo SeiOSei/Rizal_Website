@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(images/bg2.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8c361;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+header h1 {
+    margin: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header nav {
+    display:flex;
+    align-items: center;
+}
+header nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+main {
+    padding: 20px;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(245, 237, 216);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.hero-text {
+    max-width: 50%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid black;
+    margin: 1.5%;
+}
+
+.gallery {
+    overflow-x: scroll;
+    white-space: nowrap;
+    padding: 10px;
+    background-color: rgb(245, 237, 216);
+}
+
+.scroll-container {
+    display: inline-block;
+    
+}
+
+.scroll-content {
+    display: flex;
+    gap: 10px;
+}
+
+.thumbnail {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border 0.3s;
+}
+
+.thumbnail.active {
+    border: 5px solid #000; /* Change this to the desired color for highlighting */
+}
+
+.nav-pills .nav-link.active{
+    color: #fff;
+    background-color: black;
+}
+.nav-pills .nav-link {
+    background: 0 0;
+    border: 0;
+    border-radius: .25rem;
+}
+.nav-link{
+    color: black;
+    display: block;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
+.nav-link a{
+    cursor: pointer;
+}
+
+.photo-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    width: 75%;
+    margin: 0 auto;
+}
+.photo-collage {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 800px;
+    margin: 2% auto;
+    row-gap: 40px;
+    column-gap: 200px;
+}
+.photo-item {
+    text-align: center;
+    border: 2px solid black;
+    padding: 5%;
+    background-color: rgb(245, 237, 216);
+    
+}
+.photo-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 2px solid black;
+
+}
+.photo-caption {
+    text-align: center;
+}
